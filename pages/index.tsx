@@ -6,6 +6,7 @@ import useGlobalErrorHandler from "hooks/useGlobalErrorHandler";
 import useGlobalKeyboardShortcuts from "hooks/useGlobalKeyboardShortcuts";
 import useIFrameFocuser from "hooks/useIFrameFocuser";
 import useUrlLoader from "hooks/useUrlLoader";
+import Browser from "components/apps/Browser";
 
 const Index = (): React.ReactElement => {
   useIFrameFocuser();
@@ -17,6 +18,7 @@ const Index = (): React.ReactElement => {
     <Desktop>
       <Taskbar />
       <AppsLoader />
+      <Browser id="" />
     </Desktop>
   );
 };
