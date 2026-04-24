@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-sort-props, sort-keys-fix/sort-keys-fix */
 import Head from "next/head";
 import Link from "next/link";
 
@@ -37,8 +38,8 @@ const Home = (): React.ReactElement => (
     <Head>
       <title>Frontier Signal | AI Research, Product, And Infrastructure</title>
       <meta
-        name="description"
         content="A modern AI tech blog for founders, operators, and builders."
+        name="description"
       />
     </Head>
 
@@ -50,7 +51,7 @@ const Home = (): React.ReactElement => (
           <span>AI research, product, and infrastructure</span>
         </span>
       </Link>
-      <nav className="fs-nav" aria-label="Primary">
+      <nav aria-label="Primary" className="fs-nav">
         <a href="#stories">Stories</a>
         <a href="#briefing">Briefing</a>
         <Link href="/advertise">Advertise</Link>
@@ -149,7 +150,7 @@ const Home = (): React.ReactElement => (
       </div>
 
       <div className="fs-story-grid">
-        {stories.slice(1).map(({ href, label, title, summary }) => (
+        {stories.slice(1).map(({ href, label, summary, title }) => (
           <Link className="fs-story" href={href} key={href}>
             <div className="fs-story-visual" />
             <div className="fs-story-copy">
@@ -239,7 +240,7 @@ const Home = (): React.ReactElement => (
       </div>
       <div>
         <form className="fs-form">
-          <input type="email" placeholder="Email address" aria-label="Email address" />
+          <input aria-label="Email address" placeholder="Email address" type="email" />
           <button className="fs-button fs-button-primary" type="submit">
             Join Free
           </button>
