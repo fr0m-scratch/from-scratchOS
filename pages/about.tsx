@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-sort-props */
 import Head from "next/head";
 import Link from "next/link";
 
@@ -6,8 +7,8 @@ const About = (): React.ReactElement => (
     <Head>
       <title>About | Frontier Signal</title>
       <meta
-        name="description"
         content="About Frontier Signal, an AI tech publication focused on research, product, infrastructure, and the economics of applied AI."
+        name="description"
       />
     </Head>
 
@@ -19,7 +20,7 @@ const About = (): React.ReactElement => (
           <span>AI research, product, and infrastructure</span>
         </span>
       </Link>
-      <nav className="fs-nav" aria-label="Primary">
+      <nav aria-label="Primary" className="fs-nav">
         <Link href="/">Home</Link>
         <Link href="/advertise">Advertise</Link>
       </nav>
