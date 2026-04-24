@@ -1,11 +1,12 @@
-import type { AppProps } from "next/app";
+/* eslint-disable react/jsx-sort-props */
+import { type AppProps } from "next/app";
 import Head from "next/head";
 
 const App = ({ Component, pageProps }: AppProps): React.ReactElement => (
   <>
     <Head>
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <meta name="theme-color" content="#f5f7f4" />
+      <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+      <meta content="#f5f7f4" name="theme-color" />
     </Head>
     <Component {...pageProps} />
     <style jsx global>{`
@@ -465,8 +466,13 @@ const App = ({ Component, pageProps }: AppProps): React.ReactElement => (
       }
 
       @keyframes fsTicker {
-        from { transform: translateX(0); }
-        to { transform: translateX(-50%); }
+        from {
+          transform: translateX(0);
+        }
+
+        to {
+          transform: translateX(-50%);
+        }
       }
 
       @media (max-width: 980px) {
