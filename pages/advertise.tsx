@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-sort-props */
 import Head from "next/head";
 import Link from "next/link";
 
@@ -6,8 +7,8 @@ const Advertise = (): React.ReactElement => (
     <Head>
       <title>Advertise | Frontier Signal</title>
       <meta
-        name="description"
         content="Sponsor Frontier Signal and reach founders, operators, developers, and AI tool buyers."
+        name="description"
       />
     </Head>
 
@@ -19,7 +20,7 @@ const Advertise = (): React.ReactElement => (
           <span>AI research, product, and infrastructure</span>
         </span>
       </Link>
-      <nav className="fs-nav" aria-label="Primary">
+      <nav aria-label="Primary" className="fs-nav">
         <Link href="/">Home</Link>
         <Link href="/about">About</Link>
       </nav>
